@@ -233,10 +233,33 @@ body {
     background-color: #f8f9fa;
     border-radius: 4px;
     border-left: 3px solid #3498db;
+    transition: all 0.3s ease;
 }
 
 .result-item strong {
     color: #2c3e50;
+}
+
+/* Visible occurrences - bright green styling */
+.result-item-visible {
+    background-color: #d4edda;
+    border-left-color: #28a745;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.2);
+}
+
+.result-item-visible strong {
+    color: #155724;
+}
+
+/* Hidden occurrences - muted gray styling */
+.result-item-hidden {
+    background-color: #e9ecef;
+    border-left-color: #6c757d;
+    opacity: 0.7;
+}
+
+.result-item-hidden strong {
+    color: #495057;
 }
 
 /* Responsive Design */
